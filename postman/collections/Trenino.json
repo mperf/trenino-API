@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "70aa2d15-c6e4-4cf9-9bcb-63b2c471ffc6",
+		"name": "Trenino",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "17932050-70aa2d15-c6e4-4cf9-9bcb-63b2c471ffc6"
+	},
+	"item": [
+		{
+			"name": "showinfo",
+			"id": "01ce15a8-977d-4afe-b5ec-a5dbce1bd02a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://treninoapi.mattiaperfumo.it/showinfo?from=1716&n=3",
+					"protocol": "https",
+					"host": [
+						"treninoapi",
+						"mattiaperfumo",
+						"it"
+					],
+					"path": [
+						"showinfo"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "1716"
+						},
+						{
+							"key": "n",
+							"value": "3"
+						}
+					]
+				},
+				"description": "ottieni info formato HTML\n\n- **from**: codice stazione (reperibile da /stazioni)\n- **n:** numero di treni richiesti (Max=20)"
+			},
+			"response": []
+		},
+		{
+			"name": "getinfo",
+			"id": "4a5e53e5-2d35-4206-894e-4847bfa6a22e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://treninoapi.mattiaperfumo.it/getinfo?from=1716&n=3",
+					"protocol": "https",
+					"host": [
+						"treninoapi",
+						"mattiaperfumo",
+						"it"
+					],
+					"path": [
+						"getinfo"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "1716"
+						},
+						{
+							"key": "n",
+							"value": "3"
+						}
+					]
+				},
+				"description": "ottieni info formato JSON\n\n- **from**: codice stazione (reperibile da /stazioni)\n- **n**: numero di treni richiesti (Max=20)"
+			},
+			"response": []
+		},
+		{
+			"name": "Stazioni",
+			"id": "5b0bae76-2ce4-4117-9ef9-c0b0a2fc858d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://treninoapi.mattiaperfumo.it/stazioni",
+					"protocol": "https",
+					"host": [
+						"treninoapi",
+						"mattiaperfumo",
+						"it"
+					],
+					"path": [
+						"stazioni"
+					]
+				},
+				"description": "Mostra i codici di tutte le stazioni"
+			},
+			"response": []
+		}
+	]
+}
