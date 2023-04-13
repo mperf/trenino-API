@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  treninoapi:
+    build: ./
+
+    ports:
+      - '52101:5000'
