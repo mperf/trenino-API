@@ -37,7 +37,7 @@ def fetchData(code):
             binario.append(str(i).split("<div>")[1].split()[0].split("</div>")[0])
             
     for i in to:
-        da.append(str(i).split("<div>")[1].split()[0].split("</div>")[0])
+        da.append(str(i).split("<div>")[1].split("</div>")[0].strip())
         
 
     return da,orario,binario,ritardo
