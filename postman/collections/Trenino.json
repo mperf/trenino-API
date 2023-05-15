@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "70aa2d15-c6e4-4cf9-9bcb-63b2c471ffc6",
 		"name": "Trenino",
+		"description": "API per ottenere informazioni in partenza da una stazione",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "17932050-70aa2d15-c6e4-4cf9-9bcb-63b2c471ffc6"
 	},
